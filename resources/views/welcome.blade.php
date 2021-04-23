@@ -30,15 +30,17 @@
     </style>
 </head>
 
-<body class="antialiased">
+<body>
 
-    <div class="flex h-screen">
+    
+<x-guest-layout>
+   <div class="flex h-screen">
         <div class="m-auto">
             <h3 class="text-center text-xl">Welcome to</h3>
             <h3 class="text-center p-6 font-medium text-2xl md:text-4xl text-blue-500">Annamayya Urban Development Authority, Kadapa</h3>            
         </div>
     </div>
-
+</x-guest-layout>
 
 </body>
 
