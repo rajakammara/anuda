@@ -1,14 +1,14 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-t border-gray-200">
-    <div class="hidden md:flex justify-center space-x-4 p-2 font-bold">
-        <x-anuda.navlink :href="route('home')" :active="request()->routeIs('home')">
+<nav x-data="{ open: false }" class="bg-blue-600 border-b border-t border-blue-200">
+    <div class="hidden md:flex justify-center font-bold">
+        <x-anuda.navlink :href="route('home')" :active="request()->routeIs('home')" class="w-32 flex justify-center">
                         {{ __('Home') }}
         </x-anuda.navlink>
         
         <!-- About us Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-anuda.dropdown align="top" width="48">
+            <div class="hidden sm:flex sm:items-center sm:ml-2 hover:bg-blue-800 ">
+                <x-anuda.dropdown align="top" >
                     <x-slot name="trigger">
-                        <button class="flex items-center font-bold text-gray-900 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center font-bold text-white hover:border-gray-300 focus:outline-none focus:text-white focus:border-gray-300 transition duration-150 ease-in-out w-32 justify-center">
                             <div>About us</div>
 
                             <div class="ml-1">
@@ -35,10 +35,10 @@
             </div>
 
              <!-- Planning Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <div class="hidden sm:flex sm:items-center sm:ml-2 hover:bg-blue-800 ">
                 <x-anuda.dropdown align="top" width="48">
                     <x-slot name="trigger">
-                        <button class="flex items-center font-bold text-gray-900 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center font-bold text-white hover:border-gray-300 focus:outline-none focus:text-white focus:border-gray-300 transition duration-150 ease-in-out w-32 justify-center">
                             <div>Planning</div>
 
                             <div class="ml-1">
@@ -93,10 +93,10 @@
             </div>
 
              <!-- Engineering Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-anuda.dropdown align="top" width="48">
+            <div class="hidden sm:flex sm:items-center sm:ml-2 hover:bg-blue-800 ">
+                <x-anuda.dropdown align="top">
                     <x-slot name="trigger">
-                        <button class="flex items-center font-bold text-gray-900 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center font-bold text-white  hover:border-gray-300 focus:outline-none focus:text-white focus:border-gray-300 transition duration-150 ease-in-out w-32 justify-center">
                             <div>Engineering</div>
 
                             <div class="ml-1">
@@ -123,10 +123,10 @@
                 </x-dropdown>
             </div>
             <!-- Engineering Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-anuda.dropdown align="top" width="48">
+            <div class="hidden sm:flex sm:items-center sm:ml-2 hover:bg-blue-800 ">
+                <x-anuda.dropdown align="top">
                     <x-slot name="trigger">
-                        <button class="flex items-center font-bold text-gray-900 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center font-bold text-white hover:border-gray-300 focus:outline-none focus:text-white focus:border-gray-300 transition duration-150 ease-in-out w-32 justify-center">
                             <div>Estate</div>
 
                             <div class="ml-1">
@@ -156,10 +156,10 @@
             </div>
 
             <!-- Engineering Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-anuda.dropdown align="top" width="48">
+            <div class="hidden sm:flex sm:items-center sm:ml-2 hover:bg-blue-800 ">
+                <x-anuda.dropdown align="top" >
                     <x-slot name="trigger">
-                        <button class="flex items-center font-bold text-gray-900 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                        <button class="flex items-center font-bold text-white  hover:border-gray-300 focus:outline-none focus:text-white focus:border-gray-300 transition duration-150 ease-in-out w-32 justify-center">
                             <div>GO's</div>
 
                             <div class="ml-1">
@@ -190,13 +190,13 @@
                   
                 </x-dropdown>
             </div>
-         <x-anuda.navlink :href="route('downloads')" :active="request()->routeIs('downloads')">
+         <x-anuda.navlink :href="route('downloads')" :active="request()->routeIs('downloads')" class="w-32 flex justify-center">
                         {{ __('Downloads') }}
         </x-anuda.navlink>
-        <x-anuda.navlink :href="route('contactus')" :active="request()->routeIs('contactus')">
+        <x-anuda.navlink :href="route('contactus')" :active="request()->routeIs('contactus')" class="w-32 flex justify-center">
                         {{ __('Contact us') }}
         </x-anuda.navlink>
-        <x-anuda.navlink :href="route('login')" :active="request()->routeIs('login')">
+        <x-anuda.navlink :href="route('login')" :active="request()->routeIs('login')" class="w-32 flex justify-center">
                         {{ __('Login') }}
         </x-anuda.navlink>
 
