@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    DB::table('page_hit_counters')->increment('home_page_counter');
     return view('welcome');
 })->name('home');
 
@@ -25,6 +27,9 @@ Route::get('/contactus', function () {
     return view('welcome');
 })->name('contactus');
 
+Route::get('/gos',function(){
+    return view('gos');
+})->name('gos');
 
 
 
