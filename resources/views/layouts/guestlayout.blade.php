@@ -26,7 +26,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen" id="app">
+    <div class="min-h-screen">
         {{-- Desktop Navbar --}}
         <div class="hidden md:flex justify-center items-center pt-4 pb-4 md:space-x-8">
             <div class="hidden md:flex ">

@@ -36,7 +36,7 @@ switch ($width) {
             class="absolute z-50  {{ $width }} rounded-md shadow-lg {{ $alignmentClasses }}"
             style="display: none;"
             x-on:click="open = false" x-on:mouseover.away = "open = ! open">
-        <div class="mt-1 ring-1 ring-black ring-opacity-5  {{ $contentClasses }} w-48">
+        <div class="mt-1 ring-1 ring-black ring-opacity-5  {{ $contentClasses }} w-32">
             {{ $content }}
         </div>
     </div>
