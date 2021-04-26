@@ -21,8 +21,8 @@ switch ($width) {
 }
 @endphp
 
-<div class="relative" x-data="{ open: false }" @click.away="open = false" @close.stop="open = false">
-    <div @click="open = ! open" @mouseover = "open = ! open" >
+<div class="relative" x-data="{ open: false }" x-on:click.away="open = false" x-on:close.stop="open = false">
+    <div x-on:click="open = ! open" x-on:mouseover = "open = ! open" >
         {{ $trigger }}
     </div>
 
@@ -35,7 +35,7 @@ switch ($width) {
             x-transition:leave-end="transform opacity-0 scale-95"
             class="absolute z-50  {{ $width }} rounded-md shadow-lg {{ $alignmentClasses }}"
             style="display: none;"
-            @click="open = false" @mouseover.away = "open = ! open">
+            x-on:click="open = false" x-on:mouseover.away = "open = ! open">
         <div class="mt-1 ring-1 ring-black ring-opacity-5  {{ $contentClasses }} w-48">
             {{ $content }}
         </div>

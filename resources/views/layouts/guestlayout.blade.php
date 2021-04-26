@@ -17,7 +17,8 @@
    
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
 
    
  @stack('styles')
@@ -25,7 +26,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen">
+    <div class="min-h-screen" id="app">
         {{-- Desktop Navbar --}}
         <div class="hidden md:flex justify-center items-center pt-4 pb-4 md:space-x-8">
             <div class="hidden md:flex ">
@@ -57,6 +58,9 @@
         <main>
             @yield('content')
         </main>
+
+       
+
         <footer >
             <div class="flex flex-col sm:flex-row h-auto p-6 bg-indigo-700 text-white">
             <div class="block sm:w-1/4 p-4">
@@ -122,7 +126,9 @@
             </div>
         </footer>
     </div>
-    
+ 
+     <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 
 </html>
