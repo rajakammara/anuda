@@ -23,7 +23,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="#">ANUDA Jurisdiction</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{route('jurisdiction')}}">ANUDA Jurisdiction</a></h5>
                 </div>
 
                 {{-- Deligation of Powers --}}
@@ -57,7 +57,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="#">Layout Rules</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{route('layoutrules')}}">Layout Rules</a></h5>
                 </div>
 
                 {{-- Building Rules's --}}
@@ -65,7 +65,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="#">Building Rules</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{route('buildingrules')}}">Building Rules</a></h5>
                 </div>
 
                 {{-- ULB's --}}
@@ -75,7 +75,7 @@
                         <path
                             d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="#">Urban Level Bodies</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{route('ulbs')}}">Urban Level Bodies</a></h5>
                 </div>
 
             </div>

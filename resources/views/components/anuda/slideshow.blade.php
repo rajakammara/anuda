@@ -5,7 +5,7 @@
      <div class="mySlides fade">
          <div class="numbertext">1 / 3</div>
          <img src="{{ asset('images/slideimages/city.jpg') }}" class="h-96  object-fill">
-         <div class="text">ANUDA - ANNAMAYYA URBAND DEVELOPMENT AUTHORITY</div>
+         <div class="text">ANUDA - ANNAMAYYA URBAN DEVELOPMENT AUTHORITY</div>
      </div>
 
      <div class="mySlides fade">

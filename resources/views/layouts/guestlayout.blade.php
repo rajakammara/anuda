@@ -55,8 +55,12 @@
 
 
         <!-- Page Content -->
-        <main>
-            @yield('content')
+        <main >
+            <div id="app">
+               
+                 @yield('content')
+            </div>
+            
         </main>
 
        
@@ -108,10 +112,13 @@
             <div class="block sm:w-1/4 p-4">
                 <h3 class="uppercase text-md border-l-4 pl-2 m-2">Contact Details</h3>
                 <div class="ml-6">
-                <p>
-                    Annamayya Urban Development Authority
+                     <p>
+                    Annamayya Urban Development Authority,
                 </p>
+                <p>N.G.O Colony, Kadapa, Andhra Pradesh 516002</p>
+               
                 <p>Kadapa, Andhra Pradesh</p>
+                <p class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.281212659756!2d78.84335801483869!3d14.468534989886729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI4JzA2LjciTiA3OMKwNTAnNDQuMCJF!5e0!3m2!1sen!2sin!4v1619578284727!5m2!1sen!2sin" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
               </div>
             </div>
             <div class="block sm:w-1/4 p-4">

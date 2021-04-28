@@ -31,9 +31,10 @@ Route::get('/gos',function(){
     return view('gos');
 })->name('gos');
 
-
-
-
+Route::view('ulbs','ulbs')->name('ulbs');
+Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
+Route::view('layoutrules', 'layoutrules')->name('layoutrules');
+Route::view('buildingrules', 'buildingrules')->name('buildingrules');
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
