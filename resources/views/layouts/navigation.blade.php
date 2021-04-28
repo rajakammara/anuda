@@ -15,8 +15,19 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
                         {{ __('GOs') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
+                        {{ __('Approved Layouts') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
+                        {{ __('Unauthorized Layouts') }}
+                    </x-nav-link>
+                     <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
+                        {{ __('LTP') }}
                     </x-nav-link>
                     
                 </div>
