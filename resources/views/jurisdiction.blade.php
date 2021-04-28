@@ -7,9 +7,9 @@
 
 
 <div class="flex sm:mt-4 justify-center" style="height:500px">
-    <object data="{{asset('pdf/jurisdiction.pdf')}}" type="application/pdf" width="100%" height="100%">
+    <object data="{{asset('pdf/jurisdiction.pdf')}}#toolbar=0" type="application/pdf" width="100%" height="100%">
   <p>Your web browser doesn't have a PDF plugin.
-  Instead you can <a href="{{asset('pdf/jurisdiction.pdf')}}">click here to
+  Instead you can <a href="{{asset('pdf/jurisdiction.pdf')}}" class="font-bold">click here to
   download the PDF file.</a></p>
 </object>
    
