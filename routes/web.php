@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GosController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
@@ -46,9 +47,7 @@ Route::middleware(['auth'])->group(function(){
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/admin-gos', function () {
-        return view('admin.gos');
-    })->name('admin.gos');
+    Route::resource('/admin-gos', GosController::class);
 
 });
 
