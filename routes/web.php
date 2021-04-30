@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\GosController;
+use App\Http\Controllers\GuestController;
+use App\Models\Gos;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
@@ -28,9 +30,7 @@ Route::get('/contactus', function () {
     return view('welcome');
 })->name('contactus');
 
-Route::get('/gos',function(){
-    return view('gos');
-})->name('gos');
+Route::get('/gos',[GuestController::class,"index"])->name('gos');
 
 Route::view('ulbs','ulbs')->name('ulbs');
 Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
