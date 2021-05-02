@@ -1,10 +1,15 @@
 <?php
 
+use App\Http\Controllers\ApprovedBuildingController;
+use App\Http\Controllers\ApprovedLayoutController;
 use App\Http\Controllers\GosController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\LTPController;
+use App\Http\Controllers\UnauthorizedLayoutController;
 use App\Models\Gos;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +35,8 @@ Route::get('/contactus', function () {
     return view('welcome');
 })->name('contactus');
 
-Route::get('/gos',[GuestController::class,"index"])->name('gos');
+Route::get('/gos',[GuestController::class,"gos"])->name('gos');
+Route::get('/apls', [GuestController::class, "apls"])->name('apls');
 
 Route::view('ulbs','ulbs')->name('ulbs');
 Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
@@ -48,6 +54,11 @@ Route::middleware(['auth'])->group(function(){
     })->name('dashboard');
 
     Route::resource('/admin-gos', GosController::class);
+    Route::resource('/admin-apls', ApprovedLayoutController::class);
+    Route::resource('/admin-uals', UnauthorizedLayoutController::class);
+    Route::resource('/admin-abls', ApprovedBuildingController::class);
+    Route::resource('/admin-ltps', LTPController::class);
+   
 
 });
 

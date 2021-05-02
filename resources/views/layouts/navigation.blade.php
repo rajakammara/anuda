@@ -18,6 +18,19 @@
                     <x-nav-link :href="route('admin-gos.index')" :active="request()->routeIs('admin-gos.*')">
                         {{ __('GOs') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin-apls.index')" :active="request()->routeIs('admin-apls.*')">
+                        {{ __('Approved Layouts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin-uals.index')" :active="request()->routeIs('admin-uals.*')">
+                        {{ __('Unauthorized Layouts') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin-abls.index')" :active="request()->routeIs('admin-abls.*')">
+                        {{ __('Approved Buildings') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('admin-ltps.index')" :active="request()->routeIs('admin-ltps.*')">
+                        {{ __('LTP') }}
+                    </x-nav-link>
 
                     {{-- <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
                         {{ __('Approved Layouts') }}
@@ -80,6 +93,21 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin-gos.index')" :active="request()->routeIs('admin-gos.*')">
+                {{ __('GOs') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin-apls.index')" :active="request()->routeIs('admin-apls.*')">
+                {{ __('Approved Layouts') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin-uals.index')" :active="request()->routeIs('admin-uals.*')">
+                {{ __('Unauthorized Layouts') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin-abls.index')" :active="request()->routeIs('admin-abls.*')">
+                {{ __('Approved Buildings') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin-ltps.index')" :active="request()->routeIs('admin-abls.*')">
+                {{ __('LTP') }}
             </x-responsive-nav-link>
         </div>
 

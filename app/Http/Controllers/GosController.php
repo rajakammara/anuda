@@ -55,7 +55,7 @@ class GosController extends Controller
             // Filename to store
             $fileNameToStore = 'go_' . $filename . '_' . time() . '.' . $extension;
             // Upload Image
-            $path = $request->file('gofile')->storeAs('public/uploads/' . $request->input('goname') . '/', $fileNameToStore);
+            $path = $request->file('gofile')->storeAs('public/uploads/' , $fileNameToStore);
         } else {
             $fileNameToStore = '';
         }
@@ -108,11 +108,11 @@ class GosController extends Controller
         $request->validate([
             "gonumber" => "required",
             "godesc" => "required",
-            "gofile" => "required|mimes:pdf|max:5000"
+            //"gofile" => "required|mimes:pdf|max:5000"
         ], [
             "gonumber.required" => "Please enter GO Number",
             "godesc.required" => "Please enter GO Description",
-            "gofile.required" => "Please upload GO copy"
+            //"gofile.required" => "Please upload GO copy"
         ]);
         if ($request->hasFile('gofile')) {
             // Get filename with the extension
@@ -124,7 +124,7 @@ class GosController extends Controller
             // Filename to store
             $fileNameToStore = 'go_' . $filename . '_' . time() . '.' . $extension;
             // Upload Image
-            $path = $request->file('gofile')->storeAs('public/uploads/' . $request->input('goname') . '/', $fileNameToStore);
+            $path = $request->file('gofile')->storeAs('public/uploads/' , $fileNameToStore);
 
             // Delete old File
             Storage::delete('public/uploads/' . $go->filelink);
