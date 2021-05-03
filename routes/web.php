@@ -4,9 +4,13 @@ use App\Http\Controllers\ApprovedBuildingController;
 use App\Http\Controllers\ApprovedLayoutController;
 use App\Http\Controllers\GosController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\LatestUpdateController;
 use App\Http\Controllers\LTPController;
+use App\Http\Controllers\PressReleaseController;
 use App\Http\Controllers\UnauthorizedLayoutController;
 use App\Models\Gos;
+use App\Models\LatestUpdate;
+use App\Models\PressRelease;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
@@ -23,8 +27,10 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    DB::table('page_hit_counters')->increment('home_page_counter');
-    return view('welcome');
+    //DB::table('page_hit_counters')->increment('home_page_counter');
+    $updates = LatestUpdate::all();
+    $news = PressRelease::all();
+    return view('welcome',compact('updates','news'));
 })->name('home');
 
 Route::get('/downloads', function () {
@@ -36,7 +42,10 @@ Route::get('/contactus', function () {
 })->name('contactus');
 
 Route::get('/gos',[GuestController::class,"gos"])->name('gos');
-Route::get('/apls', [GuestController::class, "apls"])->name('apls');
+Route::get('/approvedlayouts', [GuestController::class, "apls"])->name('apls');
+Route::get('/approvedbuildings', [GuestController::class, "abls"])->name('abls');
+Route::get('/unauthorizedlayouts', [GuestController::class, "uals"])->name('uals');
+Route::get('/licensed_technical_persons', [GuestController::class, "ltps"])->name('ltps');
 
 Route::view('ulbs','ulbs')->name('ulbs');
 Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
@@ -50,7 +59,9 @@ Route::view('buildingrules', 'buildingrules')->name('buildingrules');
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        $updates = LatestUpdate::all();
+        $news = PressRelease::all();
+        return view('dashboard',compact('updates','news'));
     })->name('dashboard');
 
     Route::resource('/admin-gos', GosController::class);
@@ -58,6 +69,8 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('/admin-uals', UnauthorizedLayoutController::class);
     Route::resource('/admin-abls', ApprovedBuildingController::class);
     Route::resource('/admin-ltps', LTPController::class);
+    Route::resource('/admin-lupdates',LatestUpdateController::class);
+    Route::resource('/admin-preleases', PressReleaseController::class);
    
 
 });

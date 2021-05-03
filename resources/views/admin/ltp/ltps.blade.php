@@ -16,6 +16,7 @@
             {{ $status }}
           </div>
           @endif
+          @if (!$ltps->isEmpty())
           {{-- Table --}}
           <div class="flex flex-col sm:mt-4">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -111,6 +112,9 @@
 
           {{-- .Table --}}
           {{ $ltps->links() }}
+          @else
+          <h1 class="m-3">No Records to Display</h1>
+          @endif
         </div>
       </div>
     </div>

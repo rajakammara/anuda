@@ -3,8 +3,8 @@
 @section('content')
 <div class="container mx-auto">
   <h1 class="text-sm sm:text-xl text-center py-2 bg-gray-100 mx-2 sm:my-3 font-bold">Annamaiah Urban Development
-    Authority (ANUDA) - Approved Layouts </h1>
-  @if(!$apls->isEmpty())
+    Authority (ANUDA) - Approved Buildings </h1>
+  @if (!$abls->isEmpty())
   {{-- Table --}}
   <div class="flex flex-col sm:mt-4">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -17,19 +17,19 @@
                   Sl.No
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
-                  Village / Mandal
+                  Locality
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
-                  Survey Number(s)
+                  Mandal
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
-                  Extent
+                  Survey No
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
-                  FLP No.
+                  Extent in M<sup>2</sup>
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
-                  Mortgage Plot Nos.
+                  Permit No.
                 </th>
   
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
@@ -37,40 +37,42 @@
                 </th>
                 <th scope="col" class="px-3 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider">
                   Drawings
-                </th>  
+                </th>
+  
                
   
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              @foreach ($apls as $index=>$alp)
+              @foreach ($abls as $index=>$abl)
               <tr>
                 <td class="px-3 py-4 whitespace-nowrap">
-                  {{$index + $apls->firstItem()}}
+                  {{$index + $abls->firstItem()}}
                 </td>
                 <td class="px-3 py-4 ">
-                  {{ $alp->village }}
+                  {{ $abl->location }}
                 </td>
                 <td class="px-3 py-4 ">
-                  {{ $alp->surveyno }}
+                  {{ $abl->mandal }}
                 </td>
                 <td class="px-3 py-4 ">
-                  {{ $alp->extent }}
+                  {{ $abl->surveyno }}
                 </td>
                 <td class="px-3 py-4 ">
-                  {{ $alp->flpno }}
+                  {{ $abl->extent }}
                 </td>
                 <td class="px-3 py-4 ">
-                  {{ $alp->mortgageplotnos }}
+                  {{ $abl->permitno }}
                 </td>
+  
                 <td class="px-3 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    <a href="{{ asset('storage/uploads/' . $alp->proceedings) }}" target="_blank">Proceedings</a>
+                    <a href="{{ asset('storage/uploads/' . $abl->proceedings) }}" target="_blank">Proceedings</a>
                   </span>
                 </td>
                 <td class="px-3 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    <a href="{{ asset('storage/uploads/' . $alp->drawings) }}" target="_blank">Drawings</a>
+                    <a href="{{ asset('storage/uploads/' . $abl->drawings) }}" target="_blank">Drawings</a>
                   </span>
                 </td>
               
@@ -86,10 +88,10 @@
   </div>
   
   {{-- .Table --}}
-  {{ $apls->links() }}
- @else
-No Updates
-@endif
+  {{ $abls->links() }}
+  @else
+  <h1 class="m-3">No Records to Display</h1>
+  @endif
 
 
 </div>

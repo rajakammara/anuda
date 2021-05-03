@@ -106,28 +106,28 @@
    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
     </svg>
-   <h4 class="text-xl p-1 text-center">Approved Layouts</h4>
+   <h4 class="text-xl p-1 text-center"><a href="{{route('apls')}}">Approved Layouts</a></h4>
  </div>
  {{-- Approved Buildings --}}
   <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#2DCCA7">
    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
 </svg>
-   <h4 class="text-xl p-1 text-center">Approved Buildings</h4>
+   <h4 class="text-xl p-1 text-center"><a href="{{route('abls')}}">Approved Buildings</a></h4>
  </div>
  {{-- Unauthorized layouts --}}
   <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#F7C948">
    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
 </svg>
-   <h4 class="text-xl p-1 text-center">Unauthorized Layouts</h4>
+   <h4 class="text-xl p-1 text-center"><a href="{{route('uals')}}">Unauthorized Layouts</a></h4>
  </div>
  {{-- LTP --}}
   <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#F86A6A">
     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
 </svg>
-   <h4 class="text-xl p-1 text-center">Licensed Technical Persons</h4>
+   <h4 class="text-xl p-1 text-center"><a href="{{route('ltps')}}">Licensed Technical Persons</a></h4>
  </div>
  {{-- LRS --}}
   <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#127FBF">
@@ -164,21 +164,32 @@
    <div class="flex-1 border border-gray-200 m-2">
      <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#9446ED">Latest Updates</h3>
      <p class="p-3">
-       {{-- <ul class="p-4">
-         <li> Update 1 </li>
-         <li> Update 1 </li>
-       </ul> --}}
+        @if(!$updates->isEmpty())
+       <ol class="m-2 p-2 list-decimal bg-yellow-100">
+            @foreach ($updates as $update)
+            <li class="flex items-center mr-2"><a href="{{$update->filelink}}">{{$update->title}}</a>               
+            </li>
+            @endforeach
+        </ol>
+        @else
         No Updates
+        @endif
+       
      </p>
    </div>
    <div class="flex-1 border border-gray-200 m-2">
      <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#099AA4">Press Releases</h3>
     <p class="p-3">
-       {{-- <ul class="p-4">
-         <li> Update 1 </li>
-         <li> Update 1 </li>
-       </ul> --}}
+        @if(!$news->isEmpty())
+       <ol class="m-2 p-2  bg-yellow-100">
+            @foreach ($news as $item)
+            <li class="flex items-center mr-2"><a href="{{$item->filelink}}">{{$item->title}}</a>                
+            </li>
+            @endforeach
+        </ol>
+        @else
         No Updates
+        @endif
      </p>
    </div>
    </div>
