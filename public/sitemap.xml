@@ -1,52 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://anuda.org/</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://anuda.org/</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://anuda.org/gos</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://anuda.org/gos</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/downloads</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://anuda.org/login</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/contactus</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://anuda.org/jurisdiction</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/login</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://anuda.org/layoutrules</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/pdf/formationGO.pdf</loc>
-  <lastmod>2021-04-25T16:28:06+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://anuda.org/buildingrules</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/pdf/FACGO.pdf</loc>
-  <lastmod>2021-04-25T16:28:06+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://anuda.org/ulbs</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://anuda.org/forgot-password</loc>
-  <lastmod>2021-04-26T06:58:08+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://anuda.org/approvedlayouts</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://anuda.org/approvedbuildings</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuda.org/unauthorizedlayouts</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuda.org/licensed_technical_persons</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuda.org/storage/uploads/go_formation%20GO_1619761310.pdf</loc>
+<lastmod>2021-04-30T05:41:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/storage/uploads/go_Authority%20Go%20copy_1619761364.pdf</loc>
+<lastmod>2021-04-30T05:42:44+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/storage/uploads/go_FACGO_1619761432.pdf</loc>
+<lastmod>2021-04-30T05:43:52+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/forgot-password</loc>
+<lastmod>2021-05-04T02:31:39+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/pdf/jurisdiction.pdf</loc>
+<lastmod>2021-04-28T04:09:32+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/pdf/layoutrulesgo275.pdf</loc>
+<lastmod>2021-04-28T04:09:32+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anuda.org/pdf/buildingrules.pdf</loc>
+<lastmod>2021-04-28T04:09:32+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>

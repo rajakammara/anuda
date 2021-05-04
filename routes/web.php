@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    //DB::table('page_hit_counters')->increment('home_page_counter');
+    DB::table('page_hit_counters')->increment('home_page_counter');
     $updates = LatestUpdate::all();
     $news = PressRelease::all();
     return view('welcome',compact('updates','news'));
