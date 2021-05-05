@@ -75,7 +75,7 @@
                         <path
                             d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="{{route('ulbs')}}">Urban Level Bodies</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{route('ulbs')}}">Urban Local Bodies</a></h5>
                 </div>
 
             </div>
@@ -86,12 +86,13 @@
                 <div class="flex flex-col justify-center  p-2">
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
                         <img src="{{ asset('images/srilakshmi.jpg') }}" class="h-32 w-32 rounded-full">
-                        <p class="text-center text-sm text-pink-600 font-bold">Smt Y. Sri Lakshmi, IAS</p>
-                        <p class="text-center text-xs">Special Cheif Secretary to Govt, MA & UD</p>
+                        <p class="text-center text-sm text-pink-600 font-bold">Smt Y. Sri Lakshmi, I.A.S</p>
+                        <p class="text-center text-xs">Special Chief Secretary to Govt, MA & UD</p>
                     </div>
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
                         <img src="{{ asset('images/dummy.png') }}" class="h-32 w-32">
-                        <p class="text-center text-sm  font-bold">Vice Chairperson</p>
+                        <p class="text-center text-sm text-pink-600 font-bold">Smt M. Gowthami, I.A.S</p>
+                        <p class="text-center text-xs  font-bold">Vice Chairman(FAC)</p>
                         <p class="text-center text-xs">Annamayya Urban Development Authority</p>
                     </div>
                 </div>
@@ -151,9 +152,10 @@
           <div class="border border-gray-200 p-6 m-6">
             <h2 class="text-2xl font-bold p-3 text-indigo-700">About ANUDA</h2>
            <p class="p-2 text-sm sm:text-xl leading-loose sm:leading-relaxed sm:p-4 sm:text-justify">
-             ANUDA will be governed by under Andhra Pradesh Metropolitan Region and Urban Development Authorities Act 2016 with the objective of achieving orderly (planned) growth and environmental upgradation wherever necessary. For this purpose, ANUDA intends to prepare a master plan covering the entire limits of 5392.26 Sq.kms. The population of ANUDA region as per Census 2011 is 18,39,269 covering 339 Villages and 9 Ulbs( Kadapa Municipal Corporation, Proddutur Municipality, Rayachoty Municipality,
-             Mydukur Municipality, Jammalamadugu Nagara Panchayat, Budwel Municipality, Pulivendula Municipality,
-             Rajampeta Nagara Panchayat & Yerraguntla Nagara Panchayat )
+             ANUDA will be governed by under Andhra Pradesh Metropolitan Region and Urban Development Authorities Act 2016 with the objective of achieving orderly (planned) growth and environmental upgradation wherever necessary. For this purpose, ANUDA intends to prepare a master plan covering the entire limits of 5392.26 Sq.kms. The population of ANUDA region as per Census 2011 is 18,39,269 covering 339 Villages and 10 Ulb’s
+            (Kadapa Municipal Corporation, Proddatur Municipality, Rayachoty Municipality, Mydukur Municipality, Badvel
+            Municipality, Pulivendula Municipality, Rajampeta Municipality , Jammalamadugu Nagara Panchayat, Yerraguntla Nagara
+            Panchayat & Kamalapuram Nagara Panchayat )
            </p>
           </div>
         </div>

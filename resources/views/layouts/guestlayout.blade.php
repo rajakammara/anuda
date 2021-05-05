@@ -31,9 +31,9 @@
         <div class="hidden md:flex justify-center items-center pt-4 pb-4 md:space-x-8">
             <div class="hidden md:flex ">
             
-            <img src={{asset('images/aplogo.png')}} class="w-28 object-contain"/>
-            <img src={{asset('images/logo.png')}} class="w-28 object-contain ml-2"/>
             
+            <img src={{asset('images/logo.png')}} class="w-28 object-contain ml-2"/>
+            <img src={{asset('images/AP_CM.jpg')}} class=" w-28 object-cover m-2"/> 
             </div>
             <div class="flex flex-col justify-center text-center ">
                 <h2 class="text-xl md:text-2xl font-semibold text-purple-600" style="text-shadow: 0 2px 4px rgba(0,0,0,0.10);">అన్నమయ్య  పట్టణాభివృద్ధి సంస్థ</h2>
@@ -41,7 +41,8 @@
                 <h2 class="text-xl md:text-2xl font-semibold text-red-700" style="text-shadow: 0 2px 4px rgba(0,0,0,0.10);">Annamayya Urban Development Authority</h2>
             </div>
             <div class="hidden md:flex ">
-               <img src={{asset('images/AP_CM.jpg')}} class=" w-28 object-cover m-2"/> 
+               
+               <img src={{asset('images/aplogo.png')}} class="w-28 object-contain"/>
                <img src={{asset('images/bodtsa.jpg')}} class="w-28 object-contain m-2"/> 
             </div>
         </div>
@@ -115,9 +116,11 @@
                      <p>
                     Annamayya Urban Development Authority,
                 </p>
-                <p>N.G.O Colony, Kadapa, Andhra Pradesh 516002</p>
-               
-                <p>Kadapa, Andhra Pradesh</p>
+                <p>Door No. 36 / 263-29, Reddy Colony,</p>
+                <p>Near Adithya Kalyanamadapam,</p>
+                <p>Chinna chowk , Old Bypass Road,</p>
+                <p>Kadapa, YSR District Andhra Pradesh 516 002</p>                
+                
                 <p class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.281212659756!2d78.84335801483869!3d14.468534989886729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI4JzA2LjciTiA3OMKwNTAnNDQuMCJF!5e0!3m2!1sen!2sin!4v1619578284727!5m2!1sen!2sin" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
               </div>
             </div>

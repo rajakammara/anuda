@@ -38,7 +38,18 @@ Route::get('/downloads', function () {
 })->name('downloads');
 
 Route::get('/contactus', function () {
-    return view('welcome');
+    $contacts = array(
+        array("Vacant","Chairman",""),
+        array("Smt M. Gowthami, I.A.S",  "Vice Chairman (FAC)",  ""),
+        array("Smt D. Sreelakshmi",  "Secretary",  "9440750246"),
+        array("Sri B.V. Narasa Reddy",  "Administrative Officer",  "8074406709"),
+        array("Smt P. Sailaja",  "Planning Officer",  "9849816815"),
+        array("Sri C. Revapathi",  "Asst Planning Officer (I/c)",  "9849146815"),
+        array("Smt G.Indu",  "Asst Draftsman (I/c)",  "8142075848"),
+
+    );
+    //dd($contacts);
+    return view('contactus',compact("contacts"));
 })->name('contactus');
 
 Route::get('/gos',[GuestController::class,"gos"])->name('gos');
