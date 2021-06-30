@@ -14,27 +14,32 @@
                 {{-- <span>Sample Scrolling</span> --}}
             </marquee>
         </div>
-{{-- Slider Section --}}
+        {{-- Slider Section --}}
         <div class="flex flex-col sm:flex-row justify-start">
             <div class="w-full sm:w-1/4 flex flex-col  space-y-2 bg-gray-100 p-2">
 
-              {{-- Jurisdiction --}}
+                {{-- Jurisdiction --}}
                 <div class="flex flex-row  items-center bg-green-400 p-3 hover:shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="{{route('jurisdiction')}}">ANUDA Jurisdiction</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{ route('jurisdiction') }}">ANUDA Jurisdiction</a>
+                    </h5>
                 </div>
 
                 {{-- Deligation of Powers --}}
                 <div class="flex flex-row  items-center p-3 hover:shadow-lg" style="background-color: #627D98">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                     <h5 class="ml-2 text-white font-bold "><a href="#">Deligation of Powers</a></h5>
                 </div>
 
-              {{-- Master Plans --}}
+                {{-- Master Plans --}}
                 <div class="flex flex-row  items-center bg-yellow-400 p-3 hover:shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -54,18 +59,22 @@
                 </div>
                 {{-- Layout Rules's --}}
                 <div class="flex flex-row  items-center bg-purple-400 p-3 hover:shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="{{route('layoutrules')}}">Layout Rules</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{ route('layoutrules') }}">Layout Rules</a></h5>
                 </div>
 
                 {{-- Building Rules's --}}
                 <div class="flex flex-row  items-center  p-3 hover:shadow-lg" style="background-color:#94C843">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="{{route('buildingrules')}}">Building Rules</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{ route('buildingrules') }}">Building Rules</a></h5>
                 </div>
 
                 {{-- ULB's --}}
@@ -75,7 +84,7 @@
                         <path
                             d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
                     </svg>
-                    <h5 class="ml-2 text-white font-bold "><a href="{{route('ulbs')}}">Urban Local Bodies</a></h5>
+                    <h5 class="ml-2 text-white font-bold "><a href="{{ route('ulbs') }}">Urban Local Bodies</a></h5>
                 </div>
 
             </div>
@@ -90,113 +99,144 @@
                         <p class="text-center text-xs">Special Chief Secretary to Govt, MA & UD</p>
                     </div>
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
+                        <img src="{{ asset('images/chairperson.jpeg') }}" class="h-32 w-32">
+                        <p class="text-center text-sm text-pink-600 font-bold">Sri Singasani Guru Mohan</p>
+                        <p class="text-center text-xs  font-bold">Chairperson</p>
+                        <p class="text-center text-xs">Annamayya Urban Development Authority</p>
+                    </div>
+                    {{-- <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
                         <img src="{{ asset('images/dummy.png') }}" class="h-32 w-32">
                         <p class="text-center text-sm text-pink-600 font-bold">Smt M. Gowthami, I.A.S</p>
                         <p class="text-center text-xs  font-bold">Vice Chairman(FAC)</p>
                         <p class="text-center text-xs">Annamayya Urban Development Authority</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
-{{-- Boxes --}}
-<div class="p-4 font-semibold ">
-<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-x-2">
-  {{-- Approved Buildings --}}
-  
- <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#399709">
-   <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-   <h4 class="text-xl p-1 text-center"><a href="{{route('apls')}}">Approved Layouts</a></h4>
- </div>
- {{-- Approved Buildings --}}
-  <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#2DCCA7">
-   <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-</svg>
-   <h4 class="text-xl p-1 text-center"><a href="{{route('abls')}}">Approved Buildings</a></h4>
- </div>
- {{-- Unauthorized layouts --}}
-  <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#F7C948">
-   <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-</svg>
-   <h4 class="text-xl p-1 text-center"><a href="{{route('uals')}}">Unauthorized Layouts</a></h4>
- </div>
- {{-- LTP --}}
-  <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#F86A6A">
-    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-</svg>
-   <h4 class="text-xl p-1 text-center"><a href="{{route('ltps')}}">Licensed Technical Persons</a></h4>
- </div>
- {{-- LRS --}}
-  <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg" style="background-color:#127FBF">
- 
+        {{-- Boxes --}}
+        <div class="p-4 font-semibold ">
+            <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-x-2">
+                {{-- Approved Buildings --}}
 
-<svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-</svg>
-   <h4 class="text-xl p-1">LRS</h4>
- </div>
- 
-</div>
+                <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
+                    style="background-color:#399709">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="text-xl p-1 text-center"><a href="{{ route('apls') }}">Approved Layouts</a></h4>
+                </div>
+                {{-- Approved Buildings --}}
+                <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
+                    style="background-color:#2DCCA7">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    <h4 class="text-xl p-1 text-center"><a href="{{ route('abls') }}">Approved Buildings</a></h4>
+                </div>
+                {{-- Unauthorized layouts --}}
+                <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
+                    style="background-color:#F7C948">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                    </svg>
+                    <h4 class="text-xl p-1 text-center"><a href="{{ route('uals') }}">Unauthorized Layouts</a></h4>
+                </div>
+                {{-- LTP --}}
+                <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
+                    style="background-color:#F86A6A">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    <h4 class="text-xl p-1 text-center"><a href="{{ route('ltps') }}">Licensed Technical Persons</a></h4>
+                </div>
+                {{-- LRS --}}
+                <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
+                    style="background-color:#127FBF">
 
-</div>
 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <h4 class="text-xl p-1">LRS</h4>
+                </div>
 
-{{-- About Section --}}
-        <div class="m-2">
-          <hr/>
+            </div>
 
-          <div class="border border-gray-200 p-6 m-6">
-            <h2 class="text-2xl font-bold p-3 text-indigo-700">About ANUDA</h2>
-           <p class="p-2 text-sm sm:text-xl leading-loose sm:leading-relaxed sm:p-4 sm:text-justify">
-             ANUDA will be governed by under Andhra Pradesh Metropolitan Region and Urban Development Authorities Act 2016 with the objective of achieving orderly (planned) growth and environmental upgradation wherever necessary. For this purpose, ANUDA intends to prepare a master plan covering the entire limits of 5392.26 Sq.kms. The population of ANUDA region as per Census 2011 is 18,39,269 covering 339 Villages and 10 Ulb’s
-            (Kadapa Municipal Corporation, Proddatur Municipality, Rayachoty Municipality, Mydukur Municipality, Badvel
-            Municipality, Pulivendula Municipality, Rajampeta Municipality , Jammalamadugu Nagara Panchayat, Yerraguntla Nagara
-            Panchayat & Kamalapuram Nagara Panchayat )
-           </p>
-          </div>
         </div>
-  {{-- Latest Updates and Press Releases --}}
 
-  <div class="m-2">
-   <div class="flex flex-col sm:flex-row px-6"> 
-   <div class="flex-1 border border-gray-200 m-2">
-     <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#9446ED">Latest Updates</h3>
-     <p class="p-3">
-        @if(!$updates->isEmpty())
-       <ol class="m-2 p-2 list-decimal bg-yellow-100">
-            @foreach ($updates as $update)
-            <li class="flex items-center mr-2"><a href="{{$update->filelink}}">{{$update->title}}</a>               
-            </li>
-            @endforeach
-        </ol>
-        @else
-        No Updates
-        @endif
-       
-     </p>
-   </div>
-   <div class="flex-1 border border-gray-200 m-2">
-     <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#099AA4">Press Releases</h3>
-    <p class="p-3">
-        @if(!$news->isEmpty())
-       <ol class="m-2 p-2  bg-yellow-100">
-            @foreach ($news as $item)
-            <li class="flex items-center mr-2"><a href="{{$item->filelink}}">{{$item->title}}</a>                
-            </li>
-            @endforeach
-        </ol>
-        @else
-        No Updates
-        @endif
-     </p>
-   </div>
-   </div>
 
-  </div>
+        {{-- About Section --}}
+        <div class="m-2">
+            <hr />
+
+            <div class="border border-gray-200 p-6 m-6">
+                <h2 class="text-2xl font-bold p-3 text-indigo-700">About ANUDA</h2>
+                <p class="p-2 text-sm sm:text-xl leading-loose sm:leading-relaxed sm:p-4 sm:text-justify">
+                    ANUDA will be governed by under Andhra Pradesh Metropolitan Region and Urban Development Authorities Act
+                    2016 with the objective of achieving orderly (planned) growth and environmental upgradation wherever
+                    necessary. For this purpose, ANUDA intends to prepare a master plan covering the entire limits of
+                    5392.26 Sq.kms. The population of ANUDA region as per Census 2011 is 18,39,269 covering 339 Villages and
+                    10 Ulb’s
+                    (Kadapa Municipal Corporation, Proddatur Municipality, Rayachoty Municipality, Mydukur Municipality,
+                    Badvel
+                    Municipality, Pulivendula Municipality, Rajampeta Municipality , Jammalamadugu Nagara Panchayat,
+                    Yerraguntla Nagara
+                    Panchayat & Kamalapuram Nagara Panchayat )
+                </p>
+            </div>
+        </div>
+        {{-- Latest Updates and Press Releases --}}
+
+        <div class="m-2">
+            <div class="flex flex-col sm:flex-row px-6">
+                <div class="flex-1 border border-gray-200 m-2">
+                    <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#9446ED">Latest
+                        Updates</h3>
+                    <p class="p-3">
+                        @if (!$updates->isEmpty())
+                            <ol class="m-2 p-2 list-decimal bg-yellow-100">
+                                @foreach ($updates as $update)
+                                    <li class="flex items-center mr-2"><a
+                                            href="{{ $update->filelink }}">{{ $update->title }}</a>
+                                    </li>
+                                @endforeach
+                            </ol>
+                        @else
+                            No Updates
+                        @endif
+
+                    </p>
+                </div>
+                <div class="flex-1 border border-gray-200 m-2">
+                    <h3 class="text-white p-4 rounded-sm text-center font-bold" style="background-color:#099AA4">Press
+                        Releases</h3>
+                    <p class="p-3">
+                        @if (!$news->isEmpty())
+                            <ol class="m-2 p-2  bg-yellow-100">
+                                @foreach ($news as $item)
+                                    <li class="flex items-center mr-2"><a
+                                            href="{{ $item->filelink }}">{{ $item->title }}</a>
+                                    </li>
+                                @endforeach
+                            </ol>
+                        @else
+                            No Updates
+                        @endif
+                    </p>
+                </div>
+            </div>
+
+        </div>
 
 
 
@@ -324,6 +364,5 @@
                 setTimeout(showSlides, 4000); // Change image every 2 seconds
             }
         })
-
     </script>
 @endpush
