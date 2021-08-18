@@ -26,12 +26,18 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
+// Nonpayment Page
 Route::get('/', function () {
-    DB::table('page_hit_counters')->increment('home_page_counter');
-    $updates = LatestUpdate::all();
-    $news = PressRelease::all();
-    return view('welcome',compact('updates','news'));
+    return view('nonpayment');
 })->name('home');
+
+// Main Page
+// Route::get('/', function () {
+//     DB::table('page_hit_counters')->increment('home_page_counter');
+//     $updates = LatestUpdate::all();
+//     $news = PressRelease::all();
+//     return view('welcome', compact('updates', 'news'));
+// })->name('home');
 
 Route::get('/downloads', function () {
     return view('welcome');
@@ -39,7 +45,7 @@ Route::get('/downloads', function () {
 
 Route::get('/contactus', function () {
     $contacts = array(
-        array("Vacant","Chairman",""),
+        array("Vacant", "Chairman", ""),
         array("Smt M. Gowthami, I.A.S",  "Vice Chairman (FAC)",  ""),
         array("Smt D. Sreelakshmi",  "Secretary",  "9440750246"),
         array("Sri B.V. Narasa Reddy",  "Administrative Officer",  "8074406709"),
@@ -49,16 +55,16 @@ Route::get('/contactus', function () {
 
     );
     //dd($contacts);
-    return view('contactus',compact("contacts"));
+    return view('contactus', compact("contacts"));
 })->name('contactus');
 
-Route::get('/gos',[GuestController::class,"gos"])->name('gos');
+Route::get('/gos', [GuestController::class, "gos"])->name('gos');
 Route::get('/approvedlayouts', [GuestController::class, "apls"])->name('apls');
 Route::get('/approvedbuildings', [GuestController::class, "abls"])->name('abls');
 Route::get('/unauthorizedlayouts', [GuestController::class, "uals"])->name('uals');
 Route::get('/licensed_technical_persons', [GuestController::class, "ltps"])->name('ltps');
 
-Route::view('ulbs','ulbs')->name('ulbs');
+Route::view('ulbs', 'ulbs')->name('ulbs');
 Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
 Route::view('layoutrules', 'layoutrules')->name('layoutrules');
 Route::view('buildingrules', 'buildingrules')->name('buildingrules');
@@ -68,11 +74,11 @@ Route::view('buildingrules', 'buildingrules')->name('buildingrules');
 
 
 
-Route::middleware(['auth'])->group(function(){
+Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
         $updates = LatestUpdate::all();
         $news = PressRelease::all();
-        return view('dashboard',compact('updates','news'));
+        return view('dashboard', compact('updates', 'news'));
     })->name('dashboard');
 
     Route::resource('/admin-gos', GosController::class);
@@ -80,10 +86,8 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('/admin-uals', UnauthorizedLayoutController::class);
     Route::resource('/admin-abls', ApprovedBuildingController::class);
     Route::resource('/admin-ltps', LTPController::class);
-    Route::resource('/admin-lupdates',LatestUpdateController::class);
+    Route::resource('/admin-lupdates', LatestUpdateController::class);
     Route::resource('/admin-preleases', PressReleaseController::class);
-   
-
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
