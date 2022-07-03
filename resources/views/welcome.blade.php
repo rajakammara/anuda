@@ -91,25 +91,25 @@
             <div class="w-full sm:w-2/4 p-2 bg-gray-100">
                 <x-anuda.slideshow />
             </div>
-            <div class="w-full sm:w-1/4 p-4 flex justify-center bg-gray-100">
+            <div class="w-full sm:w-1/4 p-2 flex justify-center bg-gray-100">
                 <div class="flex flex-col justify-center  p-2">
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
-                        <img src="{{ asset('images/srilakshmi.jpg') }}" class="h-32 w-32 rounded-full">
+                        <img src="{{ asset('images/srilakshmi.jpg') }}" class="object-contain h-20 w-20 rounded-full">
                         <p class="text-center text-sm text-pink-600 font-bold">Smt Y. Sri Lakshmi, I.A.S</p>
                         <p class="text-center text-xs">Special Chief Secretary to Govt, MA & UD</p>
                     </div>
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
-                        <img src="{{ asset('images/chairperson.jpeg') }}" class="h-32 w-32">
+                        <img src="{{ asset('images/chairperson.jpeg') }}" class="object-contain h-20 w-20">
                         <p class="text-center text-sm text-pink-600 font-bold">Sri Singasani Guru Mohan</p>
                         <p class="text-center text-xs  font-bold">Chairperson</p>
                         <p class="text-center text-xs">Annamayya Urban Development Authority</p>
                     </div>
-                    {{-- <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
-                        <img src="{{ asset('images/dummy.png') }}" class="h-32 w-32">
-                        <p class="text-center text-sm text-pink-600 font-bold">Smt M. Gowthami, I.A.S</p>
-                        <p class="text-center text-xs  font-bold">Vice Chairman(FAC)</p>
+                    <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
+                        <img src="{{ asset('images/vc_anuda.jpeg') }}" class="object-contain h-20 w-20">
+                        <p class="text-center text-sm text-pink-600 font-bold">Smt D.Sreelakshmi</p>
+                        <p class="text-center text-xs  font-bold">Vice Chairperson</p>
                         <p class="text-center text-xs">Annamayya Urban Development Authority</p>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,8 +120,8 @@
 
                 <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
                     style="background-color:#399709">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -130,8 +130,8 @@
                 {{-- Approved Buildings --}}
                 <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
                     style="background-color:#2DCCA7">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
@@ -140,8 +140,8 @@
                 {{-- Unauthorized layouts --}}
                 <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
                     style="background-color:#F7C948">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
                     </svg>
@@ -150,20 +150,21 @@
                 {{-- LTP --}}
                 <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
                     style="background-color:#F86A6A">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                     </svg>
-                    <h4 class="text-xl p-1 text-center"><a href="{{ route('ltps') }}">Licensed Technical Persons</a></h4>
+                    <h4 class="text-xl p-1 text-center"><a href="{{ route('ltps') }}">Licensed Technical Persons</a>
+                    </h4>
                 </div>
                 {{-- LRS --}}
                 <div class="flex w-full sm:flex-1 flex-col justify-center items-center p-6 text-white rounded-md hover:shadow-lg"
                     style="background-color:#127FBF">
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -332,7 +333,6 @@
                 font-size: 11px
             }
         }
-
     </style>
 @endpush
 
