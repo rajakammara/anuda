@@ -43,7 +43,7 @@
             <div class="hidden md:flex ">
                
                <img src={{asset('images/aplogo.png')}} class="w-28 object-contain"/>
-               <img src={{asset('images/bodtsa.jpg')}} class="w-28 object-contain m-2"/> 
+               <img src={{asset('images/ams.jpg')}} class="w-28 object-contain m-2"/> 
             </div>
         </div>
 
@@ -132,7 +132,7 @@
             </div>
             </div>
             <div class="flex justify-center bg-indigo-800 text-white p-4">
-                <p>Copyright 2021 - ANUDA.ORG. All Rights Reserved </p>
+                <p>Copyright 2021 - ANUDA.IN. All Rights Reserved </p>
             </div>
         </footer>
     </div>

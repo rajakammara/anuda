@@ -27,17 +27,17 @@ use Illuminate\Support\Facades\DB;
 */
 
 // Nonpayment Page
-Route::get('/', function () {
-    return view('nonpayment');
-})->name('home');
+// Route::get('/', function () {
+//    return view('nonpayment');
+// })->name('home');
 
 // Main Page
-// Route::get('/', function () {
-//     DB::table('page_hit_counters')->increment('home_page_counter');
-//     $updates = LatestUpdate::all();
-//     $news = PressRelease::all();
-//     return view('welcome', compact('updates', 'news'));
-// })->name('home');
+ Route::get('/', function () {
+    DB::table('page_hit_counters')->increment('home_page_counter');
+    $updates = LatestUpdate::all();
+     $news = PressRelease::all();
+     return view('welcome', compact('updates', 'news'));
+ })->name('home');
 
 Route::get('/downloads', function () {
     return view('welcome');
@@ -45,9 +45,9 @@ Route::get('/downloads', function () {
 
 Route::get('/contactus', function () {
     $contacts = array(
-        array("Vacant", "Chairman", ""),
-        array("Smt M. Gowthami, I.A.S",  "Vice Chairman (FAC)",  ""),
-        array("Smt D. Sreelakshmi",  "Secretary",  "9440750246"),
+        array("Sri Singasani Guru Mohan", "Chairman", ""),
+        array("Smt D. Sreelakshmi",  "Vice Chairman",  ""),
+        array("Vacant",  "Secretary",  ""),
         array("Sri B.V. Narasa Reddy",  "Administrative Officer",  "8074406709"),
         array("Smt P. Sailaja",  "Planning Officer",  "9849816815"),
         array("Sri C. Revapathi",  "Asst Planning Officer (I/c)",  "9849146815"),
