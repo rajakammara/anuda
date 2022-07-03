@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApprovedBuildingController;
 use App\Http\Controllers\ApprovedLayoutController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\GosController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\LatestUpdateController;
@@ -32,12 +33,12 @@ use Illuminate\Support\Facades\DB;
 // })->name('home');
 
 // Main Page
- Route::get('/', function () {
+Route::get('/', function () {
     DB::table('page_hit_counters')->increment('home_page_counter');
     $updates = LatestUpdate::all();
-     $news = PressRelease::all();
-     return view('welcome', compact('updates', 'news'));
- })->name('home');
+    $news = PressRelease::all();
+    return view('welcome', compact('updates', 'news'));
+})->name('home');
 
 Route::get('/downloads', function () {
     return view('welcome');
@@ -63,6 +64,7 @@ Route::get('/approvedlayouts', [GuestController::class, "apls"])->name('apls');
 Route::get('/approvedbuildings', [GuestController::class, "abls"])->name('abls');
 Route::get('/unauthorizedlayouts', [GuestController::class, "uals"])->name('uals');
 Route::get('/licensed_technical_persons', [GuestController::class, "ltps"])->name('ltps');
+Route::get('/gallery', [GuestController::class, "gallery_images"])->name('gallery');
 
 Route::view('ulbs', 'ulbs')->name('ulbs');
 Route::view('jurisdiction', 'jurisdiction')->name('jurisdiction');
@@ -88,6 +90,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/admin-ltps', LTPController::class);
     Route::resource('/admin-lupdates', LatestUpdateController::class);
     Route::resource('/admin-preleases', PressReleaseController::class);
+    Route::resource('/admin-gallery', GalleryController::class);
 });
 
 require __DIR__ . '/auth.php';

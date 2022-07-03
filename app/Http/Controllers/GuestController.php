@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ApprovedBuilding;
 use App\Models\ApprovedLayout;
+use App\Models\Gallery;
 use App\Models\Gos;
 use App\Models\LTP;
 use App\Models\UnauthorizedLayout;
@@ -44,5 +45,11 @@ class GuestController extends Controller
         $ltps = LTP::paginate(10);
         //dd($gosval);
         return view('licensed_technical_persons', compact('ltps'));
+    }
+
+    public function gallery_images()
+    {
+        $images_data = Gallery::all();
+        return view('gallery_images', compact('images_data'));
     }
 }
