@@ -8,13 +8,15 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\LatestUpdateController;
 use App\Http\Controllers\LTPController;
 use App\Http\Controllers\PressReleaseController;
+use App\Http\Controllers\ScrollTextController;
 use App\Http\Controllers\UnauthorizedLayoutController;
 use App\Models\Gos;
 use App\Models\LatestUpdate;
 use App\Models\PressRelease;
+use App\Models\ScrollText;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +39,8 @@ Route::get('/', function () {
     DB::table('page_hit_counters')->increment('home_page_counter');
     $updates = LatestUpdate::all();
     $news = PressRelease::all();
-    return view('welcome', compact('updates', 'news'));
+    $scrolling_text = ScrollText::all();
+    return view('welcome', compact('updates', 'news', 'scrolling_text'));
 })->name('home');
 
 Route::get('/downloads', function () {
@@ -91,6 +94,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/admin-lupdates', LatestUpdateController::class);
     Route::resource('/admin-preleases', PressReleaseController::class);
     Route::resource('/admin-gallery', GalleryController::class);
+    Route::resource('/admin-scrolltext', ScrollTextController::class);
 });
+
 
 require __DIR__ . '/auth.php';

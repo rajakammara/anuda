@@ -183,7 +183,7 @@
         <x-anuda.navlink :href="route('contactus')" :active="request()->routeIs('contactus')" class="w-32 flex justify-center">
             {{ __('Contact us') }}
         </x-anuda.navlink>
-        <x-anuda.navlink :href="route('login')" :active="request()->routeIs('login')" class="w-32 flex justify-center">
+        <x-anuda.navlink :href="route('gallery')" :active="request()->routeIs('gallery')" class="w-32 flex justify-center">
             {{ __('Gallery') }}
         </x-anuda.navlink>
         <x-anuda.navlink :href="route('login')" :active="request()->routeIs('login')" class="w-32 flex justify-center">
@@ -240,7 +240,7 @@
             <x-responsive-nav-link :href="route('gos')" :active="request()->routeIs('home')">
                 {{ __('GO\'s') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+            <x-responsive-nav-link :href="route('gallery')" :active="request()->routeIs('gallery')">
                 {{ __('Gallery') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">

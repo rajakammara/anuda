@@ -34,6 +34,9 @@
                     <x-nav-link :href="route('admin-gallery.index')" :active="request()->routeIs('admin-gallery.*')">
                         {{ __('Gallery') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin-scrolltext.index')" :active="request()->routeIs('admin-scrolltext.*')">
+                        {{ __('Scroll Text') }}
+                    </x-nav-link>
 
                     {{-- <x-nav-link :href="route('admin.gos')" :active="request()->routeIs('admin.gos')">
                         {{ __('Approved Layouts') }}

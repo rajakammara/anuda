@@ -9,8 +9,9 @@
         <div>
             <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" class="p-2">
                 <span class="font-bold text-white bg-gray-700 p-1">Note:</span>
-                <span class="text-red-500 font-semibold">Annamayya Urban Development Authority established in the year
-                    2019</span>
+                <span class="text-red-500 font-semibold">
+                    {{ $scrolling_text[0]->scrolling_text }}
+                </span>
                 {{-- <span>Sample Scrolling</span> --}}
             </marquee>
         </div>
@@ -208,7 +209,7 @@
                             <ol class="m-2 p-2 list-decimal bg-yellow-100">
                                 @foreach ($updates as $update)
                                     <li class="flex items-center mr-2"><a
-                                            href="{{ $update->filelink }}">{{ $update->title }}</a>
+                                            href="/storage/uploads/{{ $update->filelink }}">{{ $update->title }}</a>
                                     </li>
                                 @endforeach
                             </ol>
