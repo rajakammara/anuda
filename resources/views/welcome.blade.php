@@ -107,7 +107,7 @@
                     </div>
                     <div class="m-2 flex flex-col justify-center items-center bg-white p-1 py-2">
                         <img src="{{ asset('images/vc_anuda.jpeg') }}" class="object-contain h-20 w-20">
-                        <p class="text-center text-sm text-pink-600 font-bold">Smt D.Sreelakshmi</p>
+                        <p class="text-center text-sm text-pink-600 font-bold">Sri. Surya Sai Praveen Chand IAS</p>
                         <p class="text-center text-xs  font-bold">Vice Chairperson</p>
                         <p class="text-center text-xs">Annamayya Urban Development Authority</p>
                     </div>
@@ -208,7 +208,7 @@
                         @if (!$updates->isEmpty())
                             <ol class="m-2 p-2 list-decimal bg-yellow-100">
                                 @foreach ($updates as $update)
-                                    <li class="flex items-center mr-2"><a
+                                    <li class="flex items-center mr-2 mb-2"><a
                                             href="/storage/uploads/{{ $update->filelink }}">{{ $update->title }}</a>
                                     </li>
                                 @endforeach
@@ -226,8 +226,8 @@
                         @if (!$news->isEmpty())
                             <ol class="m-2 p-2  bg-yellow-100">
                                 @foreach ($news as $item)
-                                    <li class="flex items-center mr-2"><a
-                                            href="{{ $item->filelink }}">{{ $item->title }}</a>
+                                    <li class="flex items-center mr-2 mb-2"><a
+                                            href="/storage/uploads/{{ $item->filelink }}">{{ $item->title }}</a>
                                     </li>
                                 @endforeach
                             </ol>
