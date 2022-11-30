@@ -50,7 +50,7 @@ Route::get('/downloads', function () {
 Route::get('/contactus', function () {
     $contacts = array(
         array("Sri Singasani Guru Mohan", "Chairman", ""),
-        array("Sri. Surya Sai Praveen Chand IAS",  "Vice Chairman",  ""),
+        array("Sri Y.O.Nandan, B.Tech, M.Sc,",  "Vice Chairman",  ""),
         array("Smt D Sreelakshmi",  "Secretary",  ""),
         array("Sri B.V. Narasa Reddy",  "Administrative Officer",  "8074406709"),
         array("Smt P. Sailaja",  "Planning Officer",  "9849816815"),
