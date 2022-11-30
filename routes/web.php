@@ -51,11 +51,11 @@ Route::get('/contactus', function () {
     $contacts = array(
         array("Sri Singasani Guru Mohan", "Chairman", ""),
         array("Sri Y.O.Nandan, B.Tech, M.Sc,",  "Vice Chairman",  ""),
-        array("Smt D Sreelakshmi",  "Secretary",  ""),
+        array("Smt D. Sreelakshmi",  "Secretary",  ""),
         array("Sri B.V. Narasa Reddy",  "Administrative Officer",  "8074406709"),
         array("Smt P. Sailaja",  "Planning Officer",  "9849816815"),
-        array("Sri C. Revapathi",  "Asst Planning Officer (I/c)",  "9849146815"),
-        array("Smt G.Indu",  "Asst Draftsman (I/c)",  "8142075848"),
+        array("Sri M. Asif",  "Asst Planning Officer",  "9059983672"),
+        array("Smt G. Indu",  "Asst Draftsman (I/c)",  "8142075848"),
 
     );
     //dd($contacts);
