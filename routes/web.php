@@ -40,7 +40,9 @@ Route::get('/', function () {
     $updates = LatestUpdate::all();
     $news = PressRelease::all();
     $scrolling_text = ScrollText::all();
-    return view('welcome', compact('updates', 'news', 'scrolling_text'));
+
+    //return view('welcome', compact('updates', 'news', 'scrolling_text'));
+    return view('welcome')->with('updates', $updates)->with('news', $news)->with('scrolling_text', $scrolling_text);
 })->name('home');
 
 Route::get('/downloads', function () {
