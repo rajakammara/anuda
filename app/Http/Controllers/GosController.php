@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Gos;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+
 class GosController extends Controller
 {
     /**
@@ -14,8 +15,8 @@ class GosController extends Controller
      */
     public function index()
     {
-        $gos = Gos::paginate(10);        
-        return view('admin.gos',compact('gos'));
+        $gos = Gos::paginate(10);
+        return view('admin.gos', compact('gos'));
     }
 
     /**
@@ -39,8 +40,8 @@ class GosController extends Controller
         $request->validate([
             "gonumber" => "required",
             "godesc" => "required",
-            "gofile" => "required|mimes:pdf|max:5000"
-        ],[
+            "gofile" => "required"
+        ], [
             "gonumber.required" => "Please enter GO Number",
             "godesc.required" => "Please enter GO Description",
             "gofile.required" => "Please upload GO copy"
@@ -55,7 +56,7 @@ class GosController extends Controller
             // Filename to store
             $fileNameToStore = 'go_' . $filename . '_' . time() . '.' . $extension;
             // Upload Image
-            $path = $request->file('gofile')->storeAs('public/uploads/' , $fileNameToStore);
+            $path = $request->file('gofile')->storeAs('public/uploads/', $fileNameToStore);
         } else {
             $fileNameToStore = '';
         }
@@ -65,10 +66,8 @@ class GosController extends Controller
         $go->description = $request->get('godesc');
         $go->filelink = $fileNameToStore;
         $go->save();
-        
-        return redirect()->route('admin-gos.index')->with("status","File Uploaded Successfully");
 
-
+        return redirect()->route('admin-gos.index')->with("status", "File Uploaded Successfully");
     }
 
     /**
@@ -90,8 +89,8 @@ class GosController extends Controller
      */
     public function edit($id)
     {
-        $go = Gos::find($id);        
-        return view('admin.editgo',compact("go"));
+        $go = Gos::find($id);
+        return view('admin.editgo', compact("go"));
     }
 
     /**
@@ -124,23 +123,21 @@ class GosController extends Controller
             // Filename to store
             $fileNameToStore = 'go_' . $filename . '_' . time() . '.' . $extension;
             // Upload Image
-            $path = $request->file('gofile')->storeAs('public/uploads/' , $fileNameToStore);
+            $path = $request->file('gofile')->storeAs('public/uploads/', $fileNameToStore);
 
             // Delete old File
             Storage::delete('public/uploads/' . $go->filelink);
-
         } else {
             $fileNameToStore = $go->filelink;
         }
 
-        
+
         $go->gonumber = $request->get('gonumber');
         $go->description = $request->get('godesc');
         $go->filelink = $fileNameToStore;
         $go->save();
 
         return redirect()->route('admin-gos.index')->with("status", "Go Updated Successfully");
-
     }
 
     /**
@@ -152,17 +149,14 @@ class GosController extends Controller
     public function destroy($id)
     {
         $go = Gos::find($id);
-        
-        Storage::delete('public/uploads/'. $go->filelink);
+
+        Storage::delete('public/uploads/' . $go->filelink);
         $status = $go->delete();
-        
-        if($status){
+
+        if ($status) {
             return redirect()->route('admin-gos.index')->with("status", "Deleted Successfully");
-        }else{
+        } else {
             return redirect()->route('admin-gos.index')->with("status", "An error Occured while deleting");
         }
-
-
-        
     }
 }
